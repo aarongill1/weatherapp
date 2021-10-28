@@ -7,7 +7,7 @@ const App = () => {
   const [searchCompleted, setSearchCompleted] = useState(false);
 
   const getTemp = () => {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city || "london"}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city || "london"}&appid=${process.env.REACT_APP_API_KEY}&units=metric`)
       .then(json => json.json())
       .then(json => {
         setTemp(json.main.temp);
