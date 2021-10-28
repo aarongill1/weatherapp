@@ -17,7 +17,7 @@ const App = () => {
   }
   return (
     <div className="container">
-      <h1>What's the Fucking Temperature?!?</h1>
+      <h1>What's the Temperature?!?</h1>
       <form>
         <input type="text" value={city} placeholder="city" onChange={e => {
           setSearchCompleted(false);
